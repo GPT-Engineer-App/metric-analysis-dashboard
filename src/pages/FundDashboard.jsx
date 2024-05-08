@@ -1,4 +1,5 @@
 import { Container, VStack, Heading, Text } from "@chakra-ui/react";
+import FundCard from "../components/FundCard";
 
 const FundDashboard = () => {
   return (
@@ -7,11 +8,9 @@ const FundDashboard = () => {
         <Heading as="h1" size="xl">
           Investment Fund Dashboard
         </Heading>
-        <Text>Interactive charts and key metrics will be displayed here.</Text>
-        <Text>Placeholder for fund performance chart.</Text>
-        <Text>Placeholder for asset allocation chart.</Text>
-        <Text>Placeholder for risk indicators chart.</Text>
-        <Text>Placeholder for liquidity chart.</Text>
+        <FundCard fundName="Fund A" assets="$10M" />
+        <FundCard fundName="Fund B" assets="$20M" />
+        <FundCard fundName="Fund C" assets="$30M" />
       </VStack>
     </Container>
   );
